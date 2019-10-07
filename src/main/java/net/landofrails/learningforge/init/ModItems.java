@@ -11,6 +11,6 @@ public class ModItems {
 
     public static final List<Item> ITEMS = new ArrayList<Item>();
     public static TestItem item_test = new TestItem();
-    public static ItemBR143 item_br143 = new ItemBR143();
+    public static ItemBR143 item_Br143 = new ItemBR143();
 
 }
