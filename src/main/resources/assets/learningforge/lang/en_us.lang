@@ -1,0 +1,14 @@
+itemGroup.learningforge.tabLearningForge=Tutorial Mod
+
+item.learningforge.itemBasic.name=Basic Item
+item.learningforge.axeTutorial.name=Tutorial Axe
+item.learningforge.pickaxeTutorial.name=Tutorial Pickaxe
+item.learningforge.hoeTutorial.name=Tutorial Hoe
+item.learningforge.shovelTutorial.name=Tutorial Shovel
+item.learningforge.swordTutorial.name=Tutorial Sword
+item.learningforge.helmetTutorial.name=Tutorial Helmet
+item.learningforge.chestplateTutorial.name=Tutorial Chestplate
+item.learningforge.leggingsTutorial.name=Tutorial Leggings
+item.learningforge.bootsTutorial.name=Tutorial Boots
+
+tile.learningforge.blockBasic.name=Basic Block
