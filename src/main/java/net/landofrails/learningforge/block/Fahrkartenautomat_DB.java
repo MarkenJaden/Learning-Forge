@@ -20,13 +20,13 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class Test extends Block {
+public class Fahrkartenautomat_DB extends Block {
 
-    public Test(Material material, String unlocalizedName, String registryName) {
+    public Fahrkartenautomat_DB(Material material, String unlocalizedName, String registryName) {
         this(material, SoundType.ANVIL, unlocalizedName, registryName);
     }
 
-    public Test(Material material, SoundType sound, String unlocalizedName, String registryName) {
+    public Fahrkartenautomat_DB(Material material, SoundType sound, String unlocalizedName, String registryName) {
         super(material);
         setTranslationKey(LearningForge.MODID + "." + unlocalizedName);
         setRegistryName(registryName);

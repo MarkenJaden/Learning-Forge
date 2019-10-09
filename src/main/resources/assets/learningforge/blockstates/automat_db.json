@@ -1,0 +1,20 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"custom": { "flip-v": true },
+		"model": "learningforge:Fahrkartenautomat_DB.obj"
+	},
+	"variants": {
+		"normal": [{}],
+		"inventory": [{}],
+
+		"facing": {
+			"down": {"model": "learningforge:Fahrkartenautomat_DB.obj", "x": 90},
+			"up": {"model": "learningforge:Fahrkartenautomat_DB.obj", "x": 270},
+			"north": {"model": "learningforge:Fahrkartenautomat_DB.obj"},
+			"south": {"model": "learningforge:Fahrkartenautomat_DB.obj", "y": 180},
+			"west": {"model": "learningforge:Fahrkartenautomat_DB.obj", "y": 270},
+			"east": {"model": "learningforge:Fahrkartenautomat_DB.obj", "y": 90}
+		}
+	}
+}

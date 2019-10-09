@@ -1,6 +1,7 @@
 package net.landofrails.learningforge.util;
 
 import net.landofrails.learningforge.block.BlockBasic;
+import net.landofrails.learningforge.block.Fahrkartenautomat_DB;
 import net.landofrails.learningforge.block.Test;
 import net.landofrails.learningforge.init.TutorialBlocks;
 import net.landofrails.learningforge.item.ItemBasic;
@@ -17,6 +18,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -28,7 +30,8 @@ public class RegistryHandler {
 	public static void registerBlocks(Register<Block> event) {
 		final Block[] blocks = {
 				new BlockBasic(Material.ROCK, "blockBasic", "basic_block"),
-				new Test(Material.ROCK, "test", "test")
+				new Test(Material.ROCK, "test", "test"),
+				new Fahrkartenautomat_DB(Material.ROCK, "automatDB", "automat_db")
 		};
 		
 		event.getRegistry().registerAll(blocks);
@@ -51,7 +54,8 @@ public class RegistryHandler {
 		
 		final Item[] itemBlocks = {
 				new ItemBlock(TutorialBlocks.BASIC_BLOCK).setRegistryName(TutorialBlocks.BASIC_BLOCK.getRegistryName()),
-				new ItemBlock(TutorialBlocks.TEST).setRegistryName(TutorialBlocks.TEST.getRegistryName())
+				new ItemBlock(TutorialBlocks.TEST).setRegistryName(TutorialBlocks.TEST.getRegistryName()),
+				new ItemBlock(TutorialBlocks.AUTOMAT_DB).setRegistryName(TutorialBlocks.AUTOMAT_DB.getRegistryName())
 		};
 		
 		event.getRegistry().registerAll(items);

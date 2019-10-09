@@ -10,5 +10,6 @@ public class TutorialBlocks {
 
 	public static final Block BASIC_BLOCK = null;
 	public static final Block TEST = null;
+	public static final Block AUTOMAT_DB = null;
 	
 }
