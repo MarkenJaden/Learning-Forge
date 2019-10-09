@@ -28,6 +28,7 @@ public class ModelRegistryHandler {
 		registerModel(TutorialItems.TUTORIAL_BOOTS);
 		
 		registerModel(Item.getItemFromBlock(TutorialBlocks.BASIC_BLOCK));
+		registerModel(Item.getItemFromBlock(TutorialBlocks.TEST));
 	}
 	
 	private static void registerModel(Item item) {

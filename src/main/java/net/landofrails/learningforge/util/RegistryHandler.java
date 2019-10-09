@@ -1,6 +1,7 @@
 package net.landofrails.learningforge.util;
 
 import net.landofrails.learningforge.block.BlockBasic;
+import net.landofrails.learningforge.block.Test;
 import net.landofrails.learningforge.init.TutorialBlocks;
 import net.landofrails.learningforge.item.ItemBasic;
 import net.landofrails.learningforge.item.ItemTutorialArmor;
@@ -26,7 +27,8 @@ public class RegistryHandler {
 	@SubscribeEvent
 	public static void registerBlocks(Register<Block> event) {
 		final Block[] blocks = {
-				new BlockBasic(Material.ROCK, "blockBasic", "basic_block")
+				new BlockBasic(Material.ROCK, "blockBasic", "basic_block"),
+				new Test(Material.ROCK, "test", "test")
 		};
 		
 		event.getRegistry().registerAll(blocks);
@@ -48,7 +50,8 @@ public class RegistryHandler {
 		};
 		
 		final Item[] itemBlocks = {
-				new ItemBlock(TutorialBlocks.BASIC_BLOCK).setRegistryName(TutorialBlocks.BASIC_BLOCK.getRegistryName())
+				new ItemBlock(TutorialBlocks.BASIC_BLOCK).setRegistryName(TutorialBlocks.BASIC_BLOCK.getRegistryName()),
+				new ItemBlock(TutorialBlocks.TEST).setRegistryName(TutorialBlocks.TEST.getRegistryName())
 		};
 		
 		event.getRegistry().registerAll(items);
