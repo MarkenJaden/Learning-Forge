@@ -2,7 +2,10 @@
 	"forge_marker": 1,
 	"defaults": {
 		"custom": { "flip-v": true },
-		"model": "learningforge:fahrkartenautomat_db.obj"
+		"model": "learningforge:fahrkartenautomat_db.obj",
+		"textures": {
+			"#None": "learningforge:fahrkartenautomat_db"
+		}
 	},
 	"variants": {
 		"normal": [{}],
