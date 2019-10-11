@@ -33,23 +33,24 @@ public class Fahrkartenautomat_DB extends Block {
         setCreativeTab(LearningForge.LEARN_TAB);
         setSoundType(sound);
     }
+    @SideOnly(Side.CLIENT)
+    public void initModel() {
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+    }
 
-    @SideOnly(Side.CLIENT)
-    public void initModel(){
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this),0, new ModelResourceLocation(getRegistryName(), "inventory"));
-    }
     @Override
     @SideOnly(Side.CLIENT)
-    public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess worldIn, BlockPos pos, EnumFacing side){
-        return false;
-    }
-    @Override
-    public boolean isBlockNormalCube(IBlockState blockState){
-        return false;
-    }
-    @Override
-    public boolean isOpaqueCube(IBlockState blockState){
+    public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess worldIn, BlockPos pos, EnumFacing side) {
         return false;
     }
 
+    @Override
+    public boolean isBlockNormalCube(IBlockState blockState) {
+        return false;
+    }
+
+    @Override
+    public boolean isOpaqueCube(IBlockState blockState) {
+        return false;
+    }
 }

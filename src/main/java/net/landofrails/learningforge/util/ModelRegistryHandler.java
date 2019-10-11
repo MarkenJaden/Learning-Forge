@@ -29,7 +29,7 @@ public class ModelRegistryHandler {
 		
 		registerModel(Item.getItemFromBlock(TutorialBlocks.BASIC_BLOCK));
 		registerModel(Item.getItemFromBlock(TutorialBlocks.TEST));
-		registerModel(Item.getItemFromBlock(TutorialBlocks.AUTOMAT_DB));
+		registerModel(Item.getItemFromBlock(TutorialBlocks.FAHRKARTENAUTOMAT_DB));
 	}
 	
 	private static void registerModel(Item item) {

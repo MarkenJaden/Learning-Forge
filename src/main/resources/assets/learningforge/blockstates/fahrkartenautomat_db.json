@@ -1,0 +1,14 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"custom": { "flip-v": true },
+		"model": "learningforge:fahrkartenautomat_db.obj",
+		"textures": {
+			"#None": "learningforge:blocks/Fahrkartenautomat_DB"
+		}
+	},
+	"variants": {
+		"normal": [{}],
+		"inventory": [{}]
+	}
+}

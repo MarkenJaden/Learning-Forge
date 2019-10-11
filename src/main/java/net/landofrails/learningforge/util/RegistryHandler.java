@@ -31,7 +31,7 @@ public class RegistryHandler {
 		final Block[] blocks = {
 				new BlockBasic(Material.ROCK, "blockBasic", "basic_block"),
 				new Test(Material.ROCK, "test", "test"),
-				new Fahrkartenautomat_DB(Material.ROCK, "automatDB", "automat_db")
+				new Fahrkartenautomat_DB(Material.ROCK, "fahrkartenautomatdb", "fahrkartenautomat_db")
 		};
 		
 		event.getRegistry().registerAll(blocks);
@@ -55,7 +55,7 @@ public class RegistryHandler {
 		final Item[] itemBlocks = {
 				new ItemBlock(TutorialBlocks.BASIC_BLOCK).setRegistryName(TutorialBlocks.BASIC_BLOCK.getRegistryName()),
 				new ItemBlock(TutorialBlocks.TEST).setRegistryName(TutorialBlocks.TEST.getRegistryName()),
-				new ItemBlock(TutorialBlocks.AUTOMAT_DB).setRegistryName(TutorialBlocks.AUTOMAT_DB.getRegistryName())
+				new ItemBlock(TutorialBlocks.FAHRKARTENAUTOMAT_DB).setRegistryName(TutorialBlocks.FAHRKARTENAUTOMAT_DB.getRegistryName())
 		};
 		
 		event.getRegistry().registerAll(items);
