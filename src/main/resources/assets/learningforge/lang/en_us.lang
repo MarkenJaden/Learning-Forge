@@ -16,4 +16,4 @@ item.learningforge.bootsTutorial.name=Tutorial Boots
 #Blocks
 tile.learningforge.blockBasic.name=Basic Block
 tile.learningforge.test.name=Test OBJ Block
-tile.learningforge.fahrkartenautomatdb.name=DB Fahrkartenautomat
+tile.learningforge.fahrkartenautomatdb.name=DB ticket machine
