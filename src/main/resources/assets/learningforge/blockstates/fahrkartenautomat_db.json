@@ -4,7 +4,7 @@
 		"custom": { "flip-v": true },
 		"model": "learningforge:fahrkartenautomat_db.obj",
 		"textures": {
-			"#None": "learningforge:blocks/Fahrkartenautomat_DB"
+			"#None": "learningforge:blocks/fahrkartenautomat_db"
 		}
 	},
 	"variants": {
