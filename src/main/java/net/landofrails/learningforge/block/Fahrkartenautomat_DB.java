@@ -9,11 +9,13 @@ import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.Explosion;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
@@ -33,6 +35,7 @@ public class Fahrkartenautomat_DB extends Block {
         setCreativeTab(LearningForge.LEARN_TAB);
         setSoundType(sound);
     }
+
     @SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
@@ -52,5 +55,18 @@ public class Fahrkartenautomat_DB extends Block {
     @Override
     public boolean isOpaqueCube(IBlockState blockState) {
         return false;
+    }
+
+    @Override
+    public boolean canDropFromExplosion(Explosion explosionIn) {
+        return false;
+    }
+
+    @Override
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+        if (worldIn.isRemote) {
+            playerIn.openGui(LearningForge.MODID,0, worldIn, pos.getX(), pos.getY(), pos.getZ());
+        }
+        return true;
     }
 }

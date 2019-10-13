@@ -9,6 +9,15 @@
 	},
 	"variants": {
 		"normal": [{}],
-		"inventory": [{}]
+		"inventory": [{}],
+
+		"facing": {
+			"down": {"model": "learningforge:fahrkartenautomat_db.obj", "x": 90},
+			"up": {"model": "learningforge:fahrkartenautomat_db.obj", "x": 270},
+			"north": {"model": "learningforge:fahrkartenautomat_db.obj"},
+			"south": {"model": "learningforge:fahrkartenautomat_db.obj", "y": 180},
+			"west": {"model": "learningforge:fahrkartenautomat_db.obj", "y": 270},
+			"east": {"model": "learningforge:fahrkartenautomat_db.obj", "y": 90}
+		}
 	}
 }

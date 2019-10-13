@@ -3,7 +3,5 @@
 newmtl None
 Kd 1 1 1
 map_Kd learningforge:items/fahrkartenautomat_db
-Ks 1 1 1
-Ns 50
 illum 7
 
